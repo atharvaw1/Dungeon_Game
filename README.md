@@ -1,4 +1,4 @@
-# PDP Project4 - Text Based Adventure Game
+# PDP Project4 - Graphical and Text Based Adventure Game
 
 ## Overview
 
