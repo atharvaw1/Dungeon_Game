@@ -1,6 +1,7 @@
 package dungeonmodel.rng;
 
 
+import java.security.SecureRandom;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -23,7 +24,7 @@ public class TestRandomNumberGenerator implements IRandomNumberGenerator {
    */
   public TestRandomNumberGenerator(String type) {
     this.type = type;
-    rng = new Random();
+    rng = new SecureRandom();
     this.seed = 0;
   }
 
@@ -46,7 +47,7 @@ public class TestRandomNumberGenerator implements IRandomNumberGenerator {
   public TestRandomNumberGenerator(List values) {
     this.type = "values";
     this.seed = 0;
-    rng = new Random();
+    rng = new SecureRandom();
     this.values = new ArrayList();
     this.values.addAll(values);
   }
