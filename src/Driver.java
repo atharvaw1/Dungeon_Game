@@ -28,7 +28,7 @@ public class Driver {
         int x = Integer.parseInt(args[0]);
         int y = Integer.parseInt(args[1]);
         int interconnectivity = Integer.parseInt(args[2]);
-        boolean wrapping = args[3].equals("true");
+        boolean wrapping = "true".equals(args[3]);
         int treasurePercent = Integer.parseInt(args[4]);
         int monsterCount = Integer.parseInt(args[5]);
         String playerName = args[6];

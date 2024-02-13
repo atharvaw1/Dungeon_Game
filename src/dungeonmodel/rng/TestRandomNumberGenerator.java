@@ -56,7 +56,7 @@ public class TestRandomNumberGenerator implements IRandomNumberGenerator {
   @Override
   public int getRandomNumber(int low, int high) {
 
-    if (this.type.equals("values")) {
+    if ("values".equals(this.type)) {
       int i = (int) values.get(0);
       values.remove(0);
       return i;

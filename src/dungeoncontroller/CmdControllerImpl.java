@@ -126,7 +126,7 @@ public class CmdControllerImpl implements TextController {
         while (!done && scan.hasNext()) {
           input = scan.next();
 
-          if (input.equals("q")) {
+          if ("q".equals(input)) {
             out.append("Quitting game.");
             return;
           }
